@@ -64,22 +64,23 @@ section {
     display: flex;
     flex-direction: column;
     color: white;
-    margin: 0 auto;
     padding: 1.5rem;
     background-color: hsl(216, 50%, 16%);
     border-radius: 1rem;
-    box-shadow: 2rem 4rem hsl(216, 50%, 16%);
+    box-shadow: 1rem 2.5rem 3rem hsl(218, 54%, 9%), -1rem 2.5rem 3rem hsl(218, 54%, 9%), 3rem 4rem hsl(216, 54%, 11%), -3rem -4rem hsl(216, 54%, 11%);  /* hsl(218, 54%, 11%)*/
 }
 
-img {
+.bg-image {
     border-radius: 0.7rem;
+    width: 100%;
+    height: auto;
 }
 
 h1 {
     color: hsl(0, 0%, 100%);
     font-size: 1.4rem;
     font-weight: 500;
-    padding-top: 1.5rem;
+    padding-top: 1.4rem;
 }
 
 p {
@@ -112,4 +113,51 @@ p {
 .sm-text {
     font-weight: 300;
     color: hsl(215, 51%, 70%);
+}
+
+.user {
+    display: flex;
+    flex: 0 1 auto;
+    padding-top: 1.2rem;
+    align-items: center;
+}
+
+.avatar-img {
+    max-width: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.credit {
+    padding-left: 1rem;
+}
+
+span {
+    color: hsl(0, 0%, 100%);
+}
+
+.teal-hover:hover, bg-hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.img-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(185, 100%, 40%);
+    border-radius: 0.7rem;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.img-container:hover .overlay {
+    opacity: 0.4;
 }
