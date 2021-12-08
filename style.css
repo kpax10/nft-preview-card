@@ -166,7 +166,7 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    opacity: 0;
+    opacity: 1;
 }
 
 .img-container:hover .overlay {
@@ -176,14 +176,4 @@ span {
 
 span {
     font-weight: 400;
-}
-
-.img-overlay {
-    position: absolute;
-    width: 14%;
-    height: 14%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    opacity: 1;
 }
