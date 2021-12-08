@@ -172,3 +172,7 @@ span {
     opacity: 0.5;
     transition: .3s all ease-in-out;
 }
+
+span {
+    font-weight: 400;
+}
